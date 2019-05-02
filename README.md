@@ -1,2 +1,2 @@
-# single-machine-image-cloudlab-profile
-CloudLab profile that let's you select an image and starts a single machine with that image.
+# single-machine-cloudlab-profile
+CloudLab profile that starts up a single machine. Hardware and image are selectable.
