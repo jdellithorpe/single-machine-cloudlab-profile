@@ -47,7 +47,7 @@ params = pc.bindParameters()
 request = pc.makeRequestRSpec()
 
 node = request.RawPC("master")
-if (params.harware_type_str != ""):
+if (params.hardware_type_str != ""):
     node.hardware_type = params.hardware_type_str
 else:
     node.hardware_type = params.hardware_type
