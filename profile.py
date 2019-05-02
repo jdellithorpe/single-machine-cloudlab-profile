@@ -50,12 +50,12 @@ node = request.RawPC("master")
 if (params.hardware_type_str != ""):
     node.hardware_type = params.hardware_type_str
 else:
-    node.hardware_type = params.hardware_type
+    node.hardware_type = params.hardware_type_opt
 
 if (params.image_str != ""):
     node.disk_image = params.image_str
 else:
-    node.disk_image = urn.Image(cloudlab.Utah, "emulab-ops:%s" % params.image)
+    node.disk_image = urn.Image(cloudlab.Utah, "emulab-ops:%s" % params.image_opt)
 
 # Generate the RSpec
 pc.printRequestRSpec(request)
